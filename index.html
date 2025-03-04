@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subramanianyegappan - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            text-align: center;
+            color: #333;
+        }
+        .navbar {
+            background-color: #0047ab;
+            padding: 15px;
+            color: white;
+            font-size: 18px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 15px #0073e6;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .quote {
+            font-style: italic;
+            color: #0073e6;
+            margin-top: 20px;
+        }
+        .career-section, .achievements-section {
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#career">Professional Journey</a>
+        <a href="#achievements">Achievements</a>
+    </div>
+
+    <div class="container" id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Subramanianyegappan, a passionate engineer in Wireless Smart Communication.</p>
+        <img src="your-photo.jpg" alt="My Photo">
+    </div>
+
+    <div class="container" id="about">
+        <h2>About Me</h2>
+        <p><strong>Education:</strong> M.Tech in Wireless Smart Communication at SASTRA University, Tanjore</p>
+        <p>I specialize in designing and analyzing wireless communication systems, with experience in IoT, RFID, and networking.</p>
+    </div>
+
+    <div class="container" id="career">
+        <h2>Professional Journey</h2>
+        <div class="career-section">
+            <h3>Experience</h3>
+            <p><strong>Sivanagammai Engineering Contractor (May 2023 - June 2024)</strong></p>
+            <ul>
+                <li>Managed site operations, procurement, and inventory.</li>
+                <li>Supervised teams, coordinated with clients, and ensured project execution.</li>
+            </ul>
+        </div>
+        <div class="career-section">
+            <h3>Core Skills</h3>
+            <ul>
+                <li>AutoCAD, SketchUp, MATLAB</li>
+                <li>Six Sigma, Kaizen, 5S Methodology</li>
+                <li>Inventory Management, Production Planning</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container" id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievements-section">
+            <ul>
+                <li>Guinness World Record - Leg Art Work (2012)</li>
+                <li>Winner, Intra School Debate Competition (2015)</li>
+                <li>3rd Place, State Level Swimming Competition, Trichy (2015)</li>
+                <li>Winner, Intra College Bodybuilding Competition (2019)</li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="quote" id="quote"></p>
+
+    <script>
+        const quotes = [
+            "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+            "Believe you can and you're halfway there.",
+            "The only way to do great work is to love what you do.",
+            "Dream big and dare to fail."
+        ];
+        document.getElementById("quote").innerText = quotes[Math.floor(Math.random() * quotes.length)];
+    </script>
+</body>
+</html>
