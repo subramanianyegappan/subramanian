@@ -4,48 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subramanianyegappan - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #e3f2fd;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(to right, #e3f2fd, #bbdefb);
             text-align: center;
             color: #333;
+            padding-bottom: 50px;
         }
         .navbar {
-            background-color: #0047ab;
-            padding: 15px;
-            color: white;
+            background: #0047ab;
+            padding: 15px 0;
             font-size: 18px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         .navbar a {
             color: white;
             text-decoration: none;
-            padding: 0 15px;
+            padding: 15px 20px;
+            transition: all 0.3s;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
         }
         .container {
-            width: 60%;
-            margin: auto;
+            max-width: 70%;
+            margin: 100px auto 30px auto;
             background: white;
-            padding: 20px;
-            box-shadow: 0px 0px 15px #0073e6;
-            border-radius: 10px;
-            margin-top: 50px;
+            padding: 30px;
+            box-shadow: 0px 10px 20px rgba(0, 71, 171, 0.3);
+            border-radius: 15px;
+            text-align: center;
         }
         img {
-            width: 150px;
-            height: 150px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
+            border: 5px solid #0047ab;
+            margin: 20px 0;
+        }
+        h1, h2 {
+            color: #0047ab;
         }
         .quote {
             font-style: italic;
-            color: #0073e6;
+            color: #0047ab;
             margin-top: 20px;
+            font-size: 1.2em;
         }
         .career-section, .achievements-section {
             text-align: left;
-            margin-top: 20px;
+            padding: 10px 30px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .section-title {
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #0047ab;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        footer {
+            background: #0047ab;
+            color: white;
+            padding: 15px 0;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -59,18 +100,18 @@
 
     <div class="container" id="home">
         <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Subramanianyegappan, a passionate engineer in Wireless Smart Communication.</p>
+        <p>Hi, I'm <strong>Subramanianyegappan</strong>, an engineer specializing in Wireless Smart Communication.</p>
         <img src="your-photo.jpg" alt="My Photo">
     </div>
 
     <div class="container" id="about">
-        <h2>About Me</h2>
-        <p><strong>Education:</strong> M.Tech in Wireless Smart Communication at SASTRA University, Tanjore</p>
-        <p>I specialize in designing and analyzing wireless communication systems, with experience in IoT, RFID, and networking.</p>
+        <h2 class="section-title">About Me</h2>
+        <p><strong>Education:</strong> M.Tech in Wireless Smart Communication, SASTRA University, Tanjore</p>
+        <p>I specialize in designing and analyzing wireless communication systems, with expertise in IoT, RFID, and networking.</p>
     </div>
 
     <div class="container" id="career">
-        <h2>Professional Journey</h2>
+        <h2 class="section-title">Professional Journey</h2>
         <div class="career-section">
             <h3>Experience</h3>
             <p><strong>Sivanagammai Engineering Contractor (May 2023 - June 2024)</strong></p>
@@ -90,18 +131,22 @@
     </div>
 
     <div class="container" id="achievements">
-        <h2>Achievements</h2>
+        <h2 class="section-title">Achievements</h2>
         <div class="achievements-section">
             <ul>
-                <li>Guinness World Record - Leg Art Work (2012)</li>
-                <li>Winner, Intra School Debate Competition (2015)</li>
-                <li>3rd Place, State Level Swimming Competition, Trichy (2015)</li>
-                <li>Winner, Intra College Bodybuilding Competition (2019)</li>
+                <li><strong>Guinness World Record</strong> - Leg Art Work (2012)</li>
+                <li>Winner - Intra School Debate Competition (2015)</li>
+                <li>3rd Place - State Level Swimming Competition, Trichy (2015)</li>
+                <li>Winner - Intra College Bodybuilding Competition (2019)</li>
             </ul>
         </div>
     </div>
 
     <p class="quote" id="quote"></p>
+
+    <footer>
+        <p>&copy; 2024 Subramanianyegappan | All Rights Reserved</p>
+    </footer>
 
     <script>
         const quotes = [
