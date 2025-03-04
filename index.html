@@ -11,12 +11,13 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
         }
         body {
             background: linear-gradient(to right, #e3f2fd, #bbdefb);
             text-align: center;
             color: #333;
-            padding-bottom: 50px;
+            padding-top: 60px;
         }
         .navbar {
             background: #0047ab;
@@ -38,13 +39,12 @@
             border-radius: 5px;
         }
         .container {
-            max-width: 70%;
-            margin: 100px auto 30px auto;
+            max-width: 80%;
+            margin: 30px auto;
             background: white;
-            padding: 30px;
+            padding: 40px;
             box-shadow: 0px 10px 20px rgba(0, 71, 171, 0.3);
             border-radius: 15px;
-            text-align: center;
         }
         img {
             width: 160px;
@@ -53,7 +53,7 @@
             border: 5px solid #0047ab;
             margin: 20px 0;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #0047ab;
         }
         .quote {
@@ -62,9 +62,9 @@
             margin-top: 20px;
             font-size: 1.2em;
         }
-        .career-section, .achievements-section {
+        .section {
             text-align: left;
-            padding: 10px 30px;
+            padding: 20px;
         }
         ul {
             list-style: none;
@@ -72,15 +72,6 @@
         }
         ul li {
             padding: 8px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        .section-title {
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #0047ab;
-            display: inline-block;
-            padding-bottom: 5px;
         }
         footer {
             background: #0047ab;
@@ -105,14 +96,14 @@
     </div>
 
     <div class="container" id="about">
-        <h2 class="section-title">About Me</h2>
+        <h2>About Me</h2>
         <p><strong>Education:</strong> M.Tech in Wireless Smart Communication, SASTRA University, Tanjore</p>
         <p>I specialize in designing and analyzing wireless communication systems, with expertise in IoT, RFID, and networking.</p>
     </div>
 
     <div class="container" id="career">
-        <h2 class="section-title">Professional Journey</h2>
-        <div class="career-section">
+        <h2>Professional Journey</h2>
+        <div class="section">
             <h3>Experience</h3>
             <p><strong>Sivanagammai Engineering Contractor (May 2023 - June 2024)</strong></p>
             <ul>
@@ -120,7 +111,7 @@
                 <li>Supervised teams, coordinated with clients, and ensured project execution.</li>
             </ul>
         </div>
-        <div class="career-section">
+        <div class="section">
             <h3>Core Skills</h3>
             <ul>
                 <li>AutoCAD, SketchUp, MATLAB</li>
@@ -131,8 +122,8 @@
     </div>
 
     <div class="container" id="achievements">
-        <h2 class="section-title">Achievements</h2>
-        <div class="achievements-section">
+        <h2>Achievements</h2>
+        <div class="section">
             <ul>
                 <li><strong>Guinness World Record</strong> - Leg Art Work (2012)</li>
                 <li>Winner - Intra School Debate Competition (2015)</li>
